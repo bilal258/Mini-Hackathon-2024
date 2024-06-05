@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap 5.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- toastify link -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style/style.css">
+    <title>Registeration</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+                <a class="navbar-brand" href="#">Todo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                    </ul>
+                    <div class="d-flex">
+                        <h6 class=" m-0 text-white" id="username">Register</h5>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="py-5 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card p-5 p-md-4 mx-auto" style=" max-width: 450px ;" id="register-card">
+                        <h2>Register</h2>
+                        <hr>
+                        <form onsubmit="handleregister()">
+                            <div class="col mb-3">
+                                <input type="email" placeholder="Email" id="email" class="form-control">
+                            </div>
+                            <div class="col mb-3">
+                                <input type="password" placeholder="Password" id="password" class="form-control">
+                            </div>
+                            <div class="col ">
+                                <button id="btn" class="btn btn-primary w-100">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card p-5 p-md-4 mx-auto" style=" max-width: 450px ;" id="login-card">
+                        <h2>Login</h2>
+                        <hr>
+                        <form onsubmit="handlelogin()">
+                            <div class="col mb-3">
+                                <input type="email" placeholder="Email" id="logemail" class="form-control">
+                            </div>
+                            <div class="col mb-3">
+                                <input type="password" placeholder="Password" id="logpassword" class="form-control">
+                            </div>
+                            <div class="col ">
+                                <button id="btn1" class="btn btn-primary w-100">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12  text-center p-5 p-md-4 mx-auto border my-3" id="box1">
+                    <h6>You are successfully login <span class="text-info" id="bilal"></span></h6>
+                    <hr>
+                    <div class="col mb-3">
+                        <input type="text" placeholder="Title" id="title" class="form-control">
+                    </div>
+                    <div class="col mb-3">
+                        <input type="text" placeholder="Description" id="description" class="form-control">
+                    </div>
+                    <div class="col mb-3">
+                        <input type="date" id="date" class="form-control">
+                    </div>
+                    <div class="col mb-3">
+                        <button id="btn" class="btn w-100 text-white" onclick="addTodo()">Add Todo</button>
+                    </div>
+                    <div class="col mb-3">
+                        <button id="btn" class="btn w-100 text-white" onclick="viewTodos()">View Todo</button>
+                    </div>
+                </div>
+                <div class=" col-12 table border py-2 text-center" id="Showoutput">
+    
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer >
+        <p class="text-white text-center py-2 mb-0">&copy; <span id="year"></span>. All right reserved.</p>
+    </footer>
+
+    <!-- bootstrap 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- toastify link -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- custom css -->
+    <script src="js/script.js"></script>
+</body>
+</html>

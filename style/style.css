@@ -1,0 +1,15 @@
+header, footer,#btn, #btn1{
+    background: #1d3557 !important;
+}
+main{
+    min-height: calc(100vh - 96px);
+}
+.card,#box1{
+    max-width: 450px;
+}
+#login-card{
+    display: none;
+}
+#box1{
+    display: none;
+}
